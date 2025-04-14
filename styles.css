@@ -308,7 +308,7 @@
 }
 
 .logo-landing .logo-text {
-	font-size: 3.5vw;
+	font-size: clamp(25px, 3.5vw, 3.5vw);
 	z-index: 2;
 	text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
 	margin: 0;
@@ -317,7 +317,7 @@
 
 .landing-content h1 {
 	color: white;
-	font-size: 5vw;
+	font-size: clamp(30px, 5vw, 5vw);
 	white-space: nowrap;
 	text-align: center;
 	font-weight: 650;
@@ -332,15 +332,15 @@
 	margin-bottom: 2vw;
 	z-index: 2;
 	text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.548);
-	font-size: 1.7vw;
+	font-size: clamp(15px, 1.7vw,  1.7vw);
 }
 
 .buy-tickets {
-	font-size: 1.5vw;
+	font-size: clamp(15px, 1.5vw,  1.5vw);
 	font-weight: 600;
 	color: var(--primary-color);
 	padding: 1vw;
-	width: 18vw;
+	min-width: 18vw;
 	border-radius: 10px;
 	border: 3px solid transparent;
 	cursor: pointer;

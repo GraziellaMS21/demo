@@ -29,7 +29,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 8.5vw;
+	padding: 0 100px;
 	z-index: 100;
 }
 
@@ -215,6 +215,8 @@
 
 	.mobile-nav.upper {
 		display: flex;
+		min-height: 5vw;
+		height: auto;
 	}
 
 	.mobile-nav.lower {
@@ -225,11 +227,6 @@
 		display: flex;
 	}
 }
-
-@media (min-width: 1100px) {
-	
-}
-
 
 /* LANDING */
 
@@ -293,7 +290,6 @@
 	);
 }
 
-
 .logo-landing {
 	display: flex;
 	align-items: center;
@@ -308,7 +304,7 @@
 }
 
 .logo-landing .logo-text {
-	font-size: clamp(25px, 3.5vw, 3.5vw);
+	font-size: 3.5vw;
 	z-index: 2;
 	text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
 	margin: 0;
@@ -317,7 +313,7 @@
 
 .landing-content h1 {
 	color: white;
-	font-size: clamp(30px, 5vw, 5vw);
+	font-size: 5vw;
 	white-space: nowrap;
 	text-align: center;
 	font-weight: 650;
@@ -332,15 +328,15 @@
 	margin-bottom: 2vw;
 	z-index: 2;
 	text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.548);
-	font-size: clamp(15px, 1.7vw,  1.7vw);
+	font-size: 1.7vw;
 }
 
 .buy-tickets {
-	font-size: clamp(15px, 1.5vw,  1.5vw);
+	font-size: 1.5vw;
 	font-weight: 600;
 	color: var(--primary-color);
 	padding: 1vw;
-	min-width: 18vw;
+	width: 18vw;
 	border-radius: 10px;
 	border: 3px solid transparent;
 	cursor: pointer;
@@ -357,97 +353,85 @@
 	
 
 /* ABOUT US */
+
 .about-content {
-	margin: 5vw;
+	margin: 120px 120px 120px 80px;
 }
 
+.about-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
 
-.about-header h2 {
-	font-size: 2.3vw;
+.about-section h2 {
+	font-size: 2.25rem;
 }
 
 .about-header .line-design {
 	background-color: var(--secondary-color);
 	margin-top: 10px;
-	height: 1vw;
-	width: 15vw;
+	height: 10px;
+	width: 200px;
 	border-radius: 50px;
 }
 
-.about-header{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.image-box {
+	background-color: #ccc;
+	border-radius: 5px;
+	min-height: 120px;
 }
 
 .about-description {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: 'about-description-left about-description-right';
-	margin: 3vw;
-	gap: 2vw;
-}
-
-.about-description p {
-	text-align: justify;
-	font-size: clamp();
-}
-
-.about-description-right {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-areas: 'description-one' 'description-two';
-}
-
-.description-one, .description-two{
 	display: flex;
 }
 
-.big-img {
-	width: 100%;
-	height: auto;
-	display: block;
-	margin-bottom: 15px;	
+.large-box {
+	height: 300px;
+	width: 600px;
 }
 
-.small-img{
-	width: 50%;
+.small-box-1 {
 	height: 200px;
-	display: block;
-	margin-right: 15px;
+	width: 1450px;
+}
+.small-box-2 {
+	height: 200px;
+	width: 1500px;
 }
 
-
-@media (max-width: 1100px){
-	.about-description {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-areas: 'about-description-left' 'about-description-right';
-	}
-
-	.big-img {
-		width: 100%;
-		height: 50vh;
-		display: block;
-		margin-bottom: 15px;	
-	}
-
-	.about-description-right {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: 'description-one description-two';
-		gap: 20px;
-	}
+.about-description-one {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
 }
 
-@media (max-width: 900px){
-	.about-description-right {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-areas: 'description-one' 'description-two';
-		gap: 20px;
-	}
+.about-description-one p {
+	text-align: justify;
+	margin: 20px;
+	text-indent: 50px;
+}
+
+.about-description-right {
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+
+.about-description-two,
+.about-description-three {
+	display: flex;
+	max-width: 600px;
+	margin-bottom: 20px;
+}
+
+.about-description-two p,
+.about-description-three p {
+	text-align: justify;
+	margin: 20px;
+	text-indent: 50px;
 }
 
 /* PARTNER COMPANIES */
@@ -459,7 +443,7 @@
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
-	min-height: 50vh; 
+	height: 300px;
 	padding: 50px;
 }
 
